@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { CursosComponent } from './cursos/cursos.component';
-import { routing } from './app.rounting.module';
+import { AppRoutingModule } from './app.rounting.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { routing } from './app.rounting.module';
   imports: [
     BrowserModule,
     FormsModule,
-    routing
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

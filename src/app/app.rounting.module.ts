@@ -7,17 +7,14 @@ import { LoginComponent } from './login/login.component';
 import { CursosComponent } from './cursos/cursos.component';
 
 const appRouters: Routes = [
-    { path: 'cursos', component:CursosComponent}, 
+    { path: 'cursos', component: CursosComponent}, 
     { path: 'login', component: LoginComponent},
     { path: '', component: HomeComponent}
 ];
-
-export const routing: ModuleWithProviders = RouterModule.forRoot(appRouters); 
-
-/* 
+ 
 @NgModule({
-    imports: [RouterModule.forRoot(appRouters //, {useHash: true} caso queira usar hash
+    imports: [RouterModule.forRoot(appRouters
     )],
     exports: [RouterModule]
 })
-export class AppRoutingModule{} */
+export class AppRoutingModule{}
