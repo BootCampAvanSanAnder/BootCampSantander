@@ -7,6 +7,9 @@ import { UserProfileCardComponent } from './user-profile-card/user-profile-card.
 import { InputPageComponent } from './input-page/input-page.component';
 import { OutputPageComponent } from './output-page/output-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { UserLoginComponent } from './user-login/user-login.component';
+
+import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomePageComponent },
@@ -21,11 +24,13 @@ const appRoutes: Routes = [
     UserProfileCardComponent,
     InputPageComponent,
     OutputPageComponent,
-    HomePageComponent
+    HomePageComponent,
+    UserLoginComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

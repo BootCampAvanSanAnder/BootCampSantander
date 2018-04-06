@@ -1,0 +1,22 @@
+<div class="text-center output-body">
+  <form class="form-signin" (submit)="sayWelcome()"> <!-- Bind de evento quando o botão de Submit é acionado -->
+    <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Exemplo de Output</h1>
+    <label for="inputEmail" class="sr-only">Endereço de e-mail</label>
+
+    <!-- E-MAIL address two way binding -->
+    <input type="email" id="inputEmail" name="emailAddress" class="form-control" placeholder="Endereço de e-mail" required="" autofocus="" [(ngModel)]="emailAddress">
+    <label for="inputPassword" class="sr-only">Senha</label>
+
+    <!-- PASSWORD two way binding -->
+    <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Senha" required="" [(ngModel)]="password">
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Lembrar-me
+      </label>
+    </div>
+
+    <!-- Submit button -->
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+  </form>
+</div>

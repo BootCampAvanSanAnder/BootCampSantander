@@ -28,6 +28,12 @@ export class InputPageComponent implements OnInit {
     'Guarulhos, SP',
     'Coordenadora de Operações Financeiras');
 
+  /*
+    TODO: Criar os elementos de input com
+          o devido decorador mencionado
+          no curso.
+  */
+
   constructor() { }
 
   ngOnInit() {

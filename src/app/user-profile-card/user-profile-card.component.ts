@@ -12,6 +12,10 @@ export class UserProfileCardComponent implements OnInit {
       - Um para o nome do perfil do usuário
       - Um para o local do perfil do usuário
       - Um para descricao do perfil do usuário
+
+    Estes inputs receberão dados das TAGS HTML
+    quando este componente for declarado em
+    alguma página.
   */
 
   constructor() { }

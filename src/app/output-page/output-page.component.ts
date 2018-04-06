@@ -12,4 +12,8 @@ export class OutputPageComponent implements OnInit {
   ngOnInit() {
   }
 
+  public outputEvent(emailAddress: string): void {
+    window.alert(`Seja bem-vindo ${emailAddress}!`);
+  }
+
 }
