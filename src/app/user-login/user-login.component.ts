@@ -12,7 +12,6 @@ export class UserLoginComponent implements OnInit {
           com o devido decorador mencionado
           no curso.
   */
-  //
 
   /*
     Variáveis de Two-Way-Binding ligados
