@@ -7,13 +7,17 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { AppRoutingModule } from './app.rounting.module';
+import { CursoFormComponent } from './cursos/curso-form/curso-form.component';
+import { CursoDetalheComponent } from './cursos/curso-detalhe/curso-detalhe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    CursosComponent
+    CursosComponent,
+    CursoFormComponent,
+    CursoDetalheComponent
   ],
   imports: [
     BrowserModule,

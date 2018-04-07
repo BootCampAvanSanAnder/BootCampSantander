@@ -1,3 +1,5 @@
+import { CursoDetalheComponent } from './cursos/curso-detalhe/curso-detalhe.component';
+import { CursoFormComponent } from './cursos/curso-form/curso-form.component';
 import { NgModule } from '@angular/core';
 import { ModuleWithProviders } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
@@ -7,7 +9,11 @@ import { LoginComponent } from './login/login.component';
 import { CursosComponent } from './cursos/cursos.component';
 
 const appRouters: Routes = [
-    { path: 'cursos', component: CursosComponent}, 
+    { path: 'cursos', component: CursosComponent, children:[
+        { path: 'novo', component: CursoFormComponent}, 
+        { path: ':id', component: CursoDetalheComponent}, 
+        { path: ':id/editar', component: CursoDetalheComponent}, 
+    ]}, 
     { path: 'login', component: LoginComponent},
     { path: '', component: HomeComponent}
 ];
