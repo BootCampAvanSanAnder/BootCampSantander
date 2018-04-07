@@ -1,9 +1,9 @@
 export class UserProfileModel {
 
     constructor(
-        name: string,
-        location: string,
-        description: string,
+        public name: string,
+        public location: string,
+        public description: string,
     ) { }
 
 }
