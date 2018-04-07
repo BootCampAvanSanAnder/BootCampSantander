@@ -9,17 +9,7 @@
 
     <!-- Primeiro contato -->
     <div class="col-xs-12 col-md-6 col-lg-4">
-      <app-user-profile-card></app-user-profile-card>
-    </div>
-
-    <!-- Segundo contato -->
-    <div class="col-xs-12 col-md-6 col-lg-4">
-      <app-user-profile-card></app-user-profile-card>
-    </div>
-
-    <!-- Terceiro contato -->
-    <div class="col-xs-12 col-md-6 col-lg-4">
-      <app-user-profile-card></app-user-profile-card>
+      <app-user-profile-card *ngFor="let usuario of usuarios"></app-user-profile-card>
     </div>
   </div>
 </div>
