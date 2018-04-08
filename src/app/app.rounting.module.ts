@@ -9,18 +9,13 @@ import { LoginComponent } from './login/login.component';
 import { CursosComponent } from './cursos/cursos.component';
 
 const appRouters: Routes = [
-    { path: 'cursos', component: CursosComponent, children:[
-        { path: 'novo', component: CursoFormComponent}, 
-        { path: ':id', component: CursoDetalheComponent}, 
-        { path: ':id/editar', component: CursoDetalheComponent}, 
-    ]}, 
+    { path: 'cursos', loadChildren: "app/cursos/cursos.module#CursosModule"},
     { path: 'login', component: LoginComponent},
     { path: '', component: HomeComponent}
 ];
  
 @NgModule({
-    imports: [RouterModule.forRoot(appRouters
-    )],
+    imports: [RouterModule.forRoot(appRouters)],
     exports: [RouterModule]
 })
 export class AppRoutingModule{}

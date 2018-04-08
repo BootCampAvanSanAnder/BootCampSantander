@@ -5,19 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-import { CursosComponent } from './cursos/cursos.component';
 import { AppRoutingModule } from './app.rounting.module';
-import { CursoFormComponent } from './cursos/curso-form/curso-form.component';
-import { CursoDetalheComponent } from './cursos/curso-detalhe/curso-detalhe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent,
-    CursosComponent,
-    CursoFormComponent,
-    CursoDetalheComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
