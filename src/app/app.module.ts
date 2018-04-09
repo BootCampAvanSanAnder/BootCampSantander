@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { AlertaComponent } from './alerta/alerta.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AlertaComponent
   ],
   imports: [
     BrowserModule
