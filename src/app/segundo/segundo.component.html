@@ -1,0 +1,11 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Segundo</h1>
+    <h5>ngModel e ngModelChange.</h5>
+    <br><br>
+    <label class="lead" for="sob">Qual o seu sobrenome?</label>
+    <input id="sob" type="text" class="form-control" [ngModel]="sobrenome" (ngModelChange)="sobrenome = $event" />
+    <br>
+    <p class="lead"> Meu sobrenome é {{ sobrenome }}</p>
+  </div>
+</div>

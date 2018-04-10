@@ -1,0 +1,11 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Primeiro</h1>
+    <h5>Event Binding e Property Binding separados.</h5>
+    <br><br>
+    <label class="lead" for="nome">Qual o seu nome?</label>
+    <input id="nome" type="text" class="form-control" [value]="nome" (input)="atualizaNome($event)" />
+    <br>
+    <p class="lead"> Meu nome é {{ nome }}</p>
+  </div>
+</div>
