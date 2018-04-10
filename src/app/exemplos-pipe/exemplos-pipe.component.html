@@ -1,0 +1,9 @@
+<h5 class="text-center">Exemplos Pipes</h5>
+<div class="form-group col-6 mx-auto">
+  <p> Título: {{ livro.titulo | uppercase | camelCase }}</p>
+  <p> Estrelas: {{ livro.rating | number:'1.1-2' }}</p>
+  <p> Páginas: {{ livro.numeroPaginas | number }}</p>
+  <p> Preço: {{ livro.preco | currency:'BRL'}}</p>
+  <p> Data lançamento: {{ livro.dataLancamento | date:'dd/MM/yyyy' }}</p>
+  <p> Url: {{ livro.url }}</p>
+</div>
