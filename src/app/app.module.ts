@@ -16,7 +16,6 @@ import { CepService } from './services/cep.service';
     HttpClientModule
   ],
   providers: [
-    HttpClientModule,
     CepService
   ],
   bootstrap: [AppComponent]
