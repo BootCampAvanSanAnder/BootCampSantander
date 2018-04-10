@@ -1,20 +1,54 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<form [formGroup]="formulario" (ngSubmit)='onSubmit()'>
+  <h3 class="text-center">Cadastro de Alunos</h3>
+  <div class="form-group col-6 mx-auto">
+    <label for="nome">Nome</label>
+    <input type="text" class="form-control" id="nome" placeholder="Nome"
+    formControlName="nome">
+  </div>
+  <div *ngIf="verificaValidTouched('nome')" 
+    class="form-group col-6 mx-auto alert alert-danger" role="alert">
+    Nome é obrigatório
+  </div>
+  <div class="form-group col-6 mx-auto">
+    <label for="email">E-mail</label>
+    <input type="email" class="form-control" id="email" placeholder="nome@email.com"
+    formControlName ="email">
+  </div>
+  <div *ngIf="verificaValidTouched('email')" 
+    class="col-6 mx-auto alert alert-danger" role="alert">
+    Email deve ser preenchido e ser válido.
+  </div>
+  <div class="form-group col-6 mx-auto">
+    <button type="submit" class="btn btn-primary">Gravar</button>
+  </div>
+</form>
 
+
+<!-- Formulario Template
+<form #f='ngForm' (ngSubmit)='onSubmit(f)'>
+  <h3 class="text-center">Cadastro de Alunos</h3>
+  <div class="form-group col-6 mx-auto">
+    <label for="nome">Nome</label>
+    <input type="text" class="form-control" id="nome" placeholder="Nome"
+    required name="nome" [(ngModel)]="usuario.nome" 
+    #nome="ngModel">
+  </div>
+  <div *ngIf="!nome.valid && nome.touched" 
+    class="form-group col-6 mx-auto alert alert-danger" role="alert">
+    Nome é obrigatório
+  </div>
+  <div class="form-group col-6 mx-auto">
+    <label for="email">E-mail</label>
+    <input type="email" class="form-control" id="email" placeholder="nome@email.com"
+    required email name ="email" [(ngModel)]="usuario.email" 
+    #email="ngModel">
+  </div>
+  <div *ngIf="!email.valid && email.touched" 
+    class="col-6 mx-auto alert alert-danger" role="alert">
+    Email deve ser preenchido e ser válido.
+  </div>
+  <div class="form-group col-6 mx-auto">
+    <button type="submit" class="btn btn-primary">Gravar</button>
+  </div>
+</form>
+ -->
