@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { CepModel } from '../model/cep.model';
 
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 
 import 'rxjs/add/operator/map';
@@ -39,7 +39,7 @@ export class CepService {
     return `${CEP_SERVICE_URL}`;
   }
 
-  public getCEP(cep: string): Promise<CepModel> {
+  public getCEP(cep: string): Promise<any> {
     let getUrl;
 
     if (CepService.isMockUrl()) {
@@ -50,11 +50,10 @@ export class CepService {
 
     return this.http
       .get(getUrl)
-      .map((response) => response.json())
       .toPromise();
   }
 
-  public getReactiveCEP(cep: string): Observable<CepModel> {
+  public getReactiveCEP(cep: string): Observable<any> {
     let getUrl;
 
     if (CepService.isMockUrl()) {
@@ -64,12 +63,11 @@ export class CepService {
     }
 
     return this.http
-      .get(getUrl)
-      .map((response) => response.json());
+      .get(getUrl);
   }
 
   constructor(
-    public http: Http
+    public http: HttpClient
   ) { }
 
 }

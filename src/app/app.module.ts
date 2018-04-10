@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { CepService } from './services/cep.service';
@@ -13,10 +13,10 @@ import { CepService } from './services/cep.service';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpClientModule
   ],
   providers: [
-    HttpModule,
+    HttpClientModule,
     CepService
   ],
   bootstrap: [AppComponent]
