@@ -12,8 +12,8 @@ export class AlertaComponent implements OnInit {
   ngOnInit() {
   }
 
-  public mostrarAlerta(){
-    alert("Nós adoramos Angular!!!");
+  public mostrarAlerta() {
+    alert('Nós adoramos Angular!!!');
   }
 
 }
