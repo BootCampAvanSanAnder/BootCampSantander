@@ -7,7 +7,7 @@ import { ExemplosPipeComponent } from './exemplos-pipe/exemplos-pipe.component';
 import { registerLocaleData } from '@angular/common';
 import ptBr from '@angular/common/locales/pt';
 import { CamelCasePipe } from './camel-case.pipe';
-registerLocaleData(ptBr)
+registerLocaleData(ptBr);
 
 @NgModule({
   declarations: [
