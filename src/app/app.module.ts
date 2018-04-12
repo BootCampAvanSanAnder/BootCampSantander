@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { FormTemplateDrivenComponent } from './form-template-driven/form-template-driven.component';
+import { FormDataDrivenComponent } from './form-data-driven/form-data-driven.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormTemplateDrivenComponent,
+    FormDataDrivenComponent
   ],
   imports: [
     BrowserModule,
