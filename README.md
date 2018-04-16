@@ -126,6 +126,6 @@ Para facilitar o estudo separamos o projeto por assunto no qual foi dividido nas
 
 ## Desenvolvedores
 
-Felipe Chagas, Felipe Pereira, José Gomes, Márcio Santos, Suellyn Specie e Thiago Dias.
+André Gomes, Felipe Chagas, Felipe Pereira, José Gomes, Márcio Santos, Suellyn Specie e Thiago Dias.
 
 
