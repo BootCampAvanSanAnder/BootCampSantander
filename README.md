@@ -1,27 +1,131 @@
 # BootCampSantander
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+BootCampSantander é um treinamento de Angular que, consiste em desenvolver pessoas de forma prática e conceitual, para que possam ter os princípios básicos para trabalhar com a tecnologia Angular.
 
-## Development server
+## Detalhes Técnicos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 1.7.3.
 
-## Code scaffolding
+### Servidor local
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Para rodar o projeto utilizar o comando `ng serve`.
+- Acessar o projeto utilizando a url `http://localhost:4200/`.
 
-## Build
+### Github Projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+https://github.com/BootCampAvanSanAnder
 
-## Running unit tests
+### Slides
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+https://github.com/BootCampAvanSanAnder/Slides
 
-## Running end-to-end tests
+### Conteúdo e Exercícios
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+https://github.com/BootCampAvanSanAnder/BootCampSantander
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Branchs
+
+Para facilitar o estudo separamos o projeto por assunto no qual foi dividido nas seguintes branchs:
+
+#### Editores, HTML, CSS e JS
+
+`git checkout pre-requisitos`
+
+#### Single Page Application
+
+`git checkout requisitos-funcionais/spa`
+
+#### Orientação a Objetos
+
+`git checkout requistos-funcional/orientacao-objetos`
+
+#### MVWhatever
+
+`git checkout requisitos-funcionais/mvc`
+
+#### Reatividade
+
+`git checkout requisitos-funcionais/reatividade`
+
+#### Bootstrap
+
+`git checkout requisitos-funcional/bootstrap`
+
+#### TypeScript
+
+`git checkout requisitos-funcionais/typescript`
+
+#### Git
+
+`git checkout requisitos-funcionais/git`
+
+#### Configuração de Ambiente
+
+`git checkout requisitos-estrutural/configuracao-ambiente`
+
+#### Angular CLI
+
+`git checkout requisitos-estrutural/angular-cli`
+
+#### Estrutura de Pastas
+
+`git checkout requisitos-estrutural/estrutura-pastas-angular`
+
+#### Lint
+
+`git checkout requisitos-estrutural/lint`
+
+#### Testes no Angular
+
+`git checkout requisitos-estrutural/testes`
+
+#### Componentes
+
+`git checkout anatomia-fundamentos/componentes`
+
+#### Diretivas
+
+`git checkout anatomia-fundamentos/diretivas`
+
+#### Event Binding
+
+`git checkout anatomia-fundamentos/event-binding`
+
+#### Property Binding
+
+`git checkout anatomia-fundamentos/property-binding`
+
+#### Two-Way-Binding
+
+`git checkout anatomia-fundamentos/two-way-binding`
+
+#### Modularização
+
+`git checkout anatomia-fundamentos/modularizacao`
+
+#### Input e Output
+
+`git checkout anatomia-avancada/input-output`
+
+#### Serviços
+
+`git checkout anatomia-avancada/servicos-api-di-promisses`
+
+#### Rotas
+
+`git checkout anatomia-avancada/rota`
+
+#### Formulário
+
+`git checkout anatomia-avancada/formulario`
+
+#### Pipes
+
+`git checkout anatomia-avancada/pipes`
+
+## Desenvolvedores
+
+Felipe Chagas, Felipe Pereira, José Gomes, Márcio Santos, Suellyn Specie e Thiago Dias.
+
+
